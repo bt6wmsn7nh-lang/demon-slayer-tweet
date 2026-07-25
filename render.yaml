@@ -1,0 +1,51 @@
+# Demon Slayer Tweet
+
+A Demon Slayer-inspired social media app with:
+
+- Account creation and login
+- Password hashing
+- Persistent PostgreSQL storage
+- Posts up to 280 characters
+- Likes
+- Delete-your-own-post support
+- Editable profiles and breathing-style avatars
+- Responsive design
+- Render Blueprint deployment
+
+## Deploy on Render
+
+1. Upload this project to a GitHub repository.
+2. In Render, choose **New > Blueprint**.
+3. Connect the repository.
+4. Render reads `render.yaml` and creates the web service and PostgreSQL database.
+5. Deploy.
+
+The database tables are created automatically when the app starts.
+
+## Manual Render settings
+
+- Runtime: Node
+- Build command: `npm install`
+- Start command: `npm start`
+- Environment:
+  - `NODE_ENV=production`
+  - `DATABASE_URL` = your Render Postgres internal URL
+  - `SESSION_SECRET` = a long random value
+
+## Run locally
+
+1. Install PostgreSQL and create a database.
+2. Copy `.env.example` to `.env`.
+3. Put your local PostgreSQL URL in `.env`.
+4. Run:
+
+```bash
+npm install
+npm start
+```
+
+Open `http://localhost:3000`.
+
+## Important
+
+This project uses an original anime-inspired interface and does not include official Demon Slayer artwork. Add moderation, email verification, rate limiting, reporting, and a privacy policy before opening a large public community.
