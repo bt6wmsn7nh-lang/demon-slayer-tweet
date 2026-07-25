@@ -1,4 +1,21 @@
-node_modules/
-.env
-npm-debug.log*
-.DS_Store
+{
+  "name": "demon-slayer-tweet",
+  "version": "1.0.0",
+  "description": "Demon Slayer Tweet",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "connect-pg-simple": "^10.0.0",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "express-session": "^1.18.1",
+    "helmet": "^8.1.0",
+    "pg": "^8.16.0"
+  }
+}
